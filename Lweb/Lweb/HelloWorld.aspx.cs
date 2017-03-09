@@ -11,16 +11,8 @@ namespace Lweb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ServiceReference1.Service1Client proxy = new ServiceReference1.Service1Client();
-            ServiceReference1.ID_Table[] detailslist;
-
-            detailslist = proxy.GetUserDetails();
-
-            for (int i = 0; i < detailslist.Length; i++)
-            {
-                testdiv.InnerHtml = detailslist[i].Name;
-                testdiv.InnerHtml += detailslist[i].Surname;
-            }
+            
+           
         }
     }
 }
